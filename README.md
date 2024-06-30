@@ -66,7 +66,7 @@ end
 ```
 2. Implement controller actions in app/controllers/api/v1/articles_controller.rb:
 
-```
+```ruby
 class Api::V1::ArticlesController < ApplicationController
   def index
     articles = Article.all
@@ -112,14 +112,14 @@ end
 ## Seeding Data with Faker
 1. Add the faker gem to your Gemfile
 
-```
+```ruby
 gem 'faker'
 ```
 
 2. Run `bundle/install`
 3. Edit `db/seeds.rb`
 
-```
+```ruby
 require 'faker'
 
 50.times do
